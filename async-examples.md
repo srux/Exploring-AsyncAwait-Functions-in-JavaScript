@@ -158,4 +158,14 @@ msg(); // Nope 😠
 msg(); // Nope 😠
 msg(); // Lucky!!
 
+
+// Given that async functions always return a promise, you can also deal with unhandled errors as you would normally using a catch statement:
+
+async function msg() {
+  const msg = await yayOrNay();
+  console.log(msg);
+}
+
+msg().catch(x => console.log(x));
+
 ```
