@@ -4,7 +4,7 @@
 function scaryClown() {
   return new Promise(resolve => {
     setTimeout(() => {
-      resolve('🤡');
+      resolve('Benny');
     }, 2000);
   });
 }
@@ -14,7 +14,7 @@ async function msg() {
   console.log('Message:', msg);
 }
 
-msg(); // Message: 🤡 <-- after 2 seconds
+msg(); // Message: Benny <-- after 2 seconds
 
 // await is a new operator used to wait for a promise to resolve or reject. It can only be used inside an async function.
 ```
@@ -24,7 +24,7 @@ msg(); // Message: 🤡 <-- after 2 seconds
 function who() {
   return new Promise(resolve => {
     setTimeout(() => {
-      resolve('🤡');
+      resolve('Benny');
     }, 200);
   });
 }
@@ -53,7 +53,7 @@ async function msg() {
   console.log(`${ a } ${ b } ${ c }`);
 }
 
-msg(); // 🤡 lurks in the shadows <-- after 1 second
+msg(); // Benny lurks in the shadows <-- after 1 second
 ```
 
 
